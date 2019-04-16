@@ -1,0 +1,41 @@
+.intro-header {
+  height: unset !important;
+}
+
+.top-nav-collapse {
+  background-color: #7d8488 !important;
+}
+
+.view {
+  height: 70vh !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #7d8488 !important;
+  }
+}
+.blury {
+  -webkit-filter: blur(20px);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(20px);
+}
+
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+}
+
+@media (max-width: 740px) {
+  .full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+    height: 700px;
+  }
+}
+
+/*# sourceMappingURL=photos.component.css.map */
