@@ -1,1 +1,83 @@
-<iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 400px; margin-top: 10px; margin-bottom: 10px;" src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=987504529853671103&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=400px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=12&amp;long=22.808776800000032&amp;lat=40.6704866&amp;domain=www&amp;point=1&amp;align=2&amp;reseller=false"></iframe>
+<iframe allowtransparency="true" frameborder="0" scrolling="no"
+  style="width: 100%; height: 400px; margin-top: 10px; margin-bottom: 10px;"
+  src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=987504529853671103&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=400px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=16&amp;long=22.808776800000032&amp;lat=40.6704866&amp;domain=www&amp;point=1&amp;align=2&amp;reseller=false"></iframe>
+<br>
+
+<!-- Jumbotron -->
+<div class="jumbotron left blue-grey lighten-5">
+
+  <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_name">Όνομα *</label>
+            <input id="form_name" type="text" name="name" class="form-control"
+              placeholder="Παρακαλώ συμπληρώστε το όνομά σας *" required="required"
+              data-error="Παρακαλώ συμπληρώστε το πεδίο">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_lastname">Επώνυμο *</label>
+            <input id="form_lastname" type="text" name="surname" class="form-control"
+              placeholder="Παρακαλώ συμπληρώστε το επώνυμό σας *" required="required"
+              data-error="Παρακαλώ συμπληρώστε το πεδίο">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_email">Email *</label>
+            <input id="form_email" type="email" name="email" class="form-control"
+              placeholder="Παρακαλώ συμπληρώστε το email σας *" required="required"
+              data-error="Το email δεν είναι έγκυρο">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_need">Λόγος επικοινωνίας *</label>
+            <select id="form_need" name="need" class="form-control" required="required"
+              data-error="Παρακαλώ επιλέξτε ένα λόγο">
+              <option value=""></option>
+              <option value="Request quotation">Ερώτηση διαθεσιμότητας</option>
+              <option value="Request order status">Εκδήλωση ενδιαφέροντος</option>
+              <option value="Other">Άλλο</option>
+            </select>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="form_message">Μήνυμα *</label>
+            <textarea id="form_message" name="message" class="form-control" placeholder="Το μήνυμά σας *" rows="4"
+              required="required" data-error="Παρακαλώ συμπληρώστε το μήνυμά σας"></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <input type="submit" class="btn btn-success btn-send" value="Αποστολη">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">
+            <strong>*</strong> Τα πεδία αυτά απαιτούνται
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>
+<!-- Jumbotron -->
