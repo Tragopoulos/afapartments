@@ -1,3 +1,14 @@
+::ng-deep a {
+  color: black;
+}
 
+::ng-deep a:hover {
+  color: darkgray;
+}
+
+::ng-deep .nav-pills a.nav-link.active,
+::ng-deep .nav-pills .show > a.nav-link {
+  background-color: lightgray;
+}
 
 /*# sourceMappingURL=navbar.component.css.map */
