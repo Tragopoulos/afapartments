@@ -4,7 +4,7 @@
 
   <!-- Navbar brand -->
 
-  <mdb-navbar-brand><a class="navbar-brand" routerLink="/"><i class="fas fa-city"></i> A & F Apartments</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/" i18n><i class="fas fa-city"></i > A & F Apartments</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
@@ -14,17 +14,17 @@
       <ngb-tabset type="pills">
       <ngb-tab class="nav-item">
         <ng-template ngbTabTitle>
-          <a routerLink="/">αρχική</a>
+          <a routerLink="/" i18n>αρχική</a>
         </ng-template>
       </ngb-tab>
         <ngb-tab class="nav-item">
         <ng-template ngbTabTitle>
-          <a routerLink="/photos">φωτογραφίες</a>
+          <a routerLink="/photos" i18n>φωτογραφίες</a>
         </ng-template>
         </ngb-tab>
         <ngb-tab class="nav-item">
         <ng-template ngbTabTitle>
-          <a routerLink="/contact">επικοινωνία</a>
+          <a routerLink="/contact" i18n>επικοινωνία</a>
         </ng-template>
         </ngb-tab>
       </ngb-tabset>
@@ -34,10 +34,10 @@
     <ul class="navbar-nav ml-auto">
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light">🇬🇷Ελληνικά<span class="caret"></span></a>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" i18n>🇬🇷Ελληνικά<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary dropdown-menu-right w-responsive" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">🇬🇷 Ελληνικά</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">🇬🇧 English</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#" i18n>🇬🇷 Ελληνικά</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#" i18n>🇬🇧 English</a>
         </div>
       </li>
     </ul>

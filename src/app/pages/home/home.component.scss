@@ -8,20 +8,25 @@
 .view {
   height: 60vh !important;
 }
-.btn .fa {
-  margin-left: 3px;
-}
-
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #424f95 !important;
+.btn {
+  .fa {
+    margin-left: 3px;
   }
 }
 h6 {
   line-height: 1.7;
 }
-.rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+.rgba-gradient {
+  .full-bg-img {
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    &:not(.top-nav-collapse) {
+      background: #424f95 !important;
+    }
+  }
 }
 @media (max-width: 450px) {
   .margins {
@@ -30,10 +35,16 @@ h6 {
   }
 }
 @media (max-width: 740px) {
-  .full-height,
-  .full-height body,
-  .full-height header,
-  .full-height header .view {
+  .full-height {
     height: 1020px;
+    body {
+      height: 1020px;
+    }
+    header {
+      height: 1020px;
+      .view {
+        height: 1020px;
+      }
+    }
   }
 }

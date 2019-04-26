@@ -14,14 +14,8 @@
   background: transparent !important;
 }
 
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #7d8488 !important;
-  }
-}
 .blury {
   -webkit-filter: blur(20px);
-  /* Safari 6.0 - 9.0 */
   filter: blur(20px);
 }
 
@@ -29,11 +23,22 @@
   background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
 }
 
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #7d8488 !important;
+  }
+}
 @media (max-width: 740px) {
-  .full-height,
-.full-height body,
-.full-height header,
-.full-height header .view {
+  .full-height {
+    height: 700px;
+  }
+  .full-height body {
+    height: 700px;
+  }
+  .full-height header {
+    height: 700px;
+  }
+  .full-height header .view {
     height: 700px;
   }
 }

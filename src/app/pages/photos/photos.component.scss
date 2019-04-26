@@ -1,33 +1,46 @@
+$background_color_1: #7d8488;
+
 .intro-header {
   height: unset !important;
 }
 .top-nav-collapse {
-  background-color: #7d8488 !important;
+  background-color: $background_color_1 !important;
 }
 .view {
   height: 70vh !important;
 }
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #7d8488 !important;
+.navbar {
+  &:not(.top-nav-collapse) {
+    background: transparent !important;
   }
 }
-.blury{
-  -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+.blury {
+  -webkit-filter: blur(20px);
   filter: blur(20px);
 }
-.rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+.rgba-gradient {
+  .full-bg-img {
+    background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    &:not(.top-nav-collapse) {
+      background: #7d8488 !important;
+    }
+  }
 }
 @media (max-width: 740px) {
-  .full-height,
-  .full-height body,
-  .full-height header,
-  .full-height header .view {
+  .full-height {
     height: 700px;
+    body {
+      height: 700px;
+    }
+    header {
+      height: 700px;
+      .view {
+        height: 700px;
+      }
+    }
   }
 }
