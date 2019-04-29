@@ -65,6 +65,13 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -76,6 +83,9 @@
           "configurations": {
             "production": {
               "browserTarget": "Afapartmemts:build:production"
+            },
+            "en": {
+              "browserTarget": "Afapartmemts:build:en"
             }
           }
         },
