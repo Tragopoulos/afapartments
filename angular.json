@@ -72,6 +72,13 @@
               "i18nFormat": "xlf",
               "i18nLocale": "en",
               "i18nMissingTranslation": "error"
+            },
+            "gr": {
+              "aot": true,
+              "i18nFile": "src/locale/messages.gr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "gr",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -86,6 +93,9 @@
             },
             "en": {
               "browserTarget": "Afapartmemts:build:en"
+            },
+            "gr": {
+              "browserTarget": "Afapartmemts:build:gr"
             }
           }
         },
