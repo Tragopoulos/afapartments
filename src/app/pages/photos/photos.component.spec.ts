@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PhotosComponent } from './photos.component';
-import {ContactComponent} from '../contact/contact.component';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
 
 describe('PhotosComponent', () => {
   let component: PhotosComponent;
@@ -9,7 +8,8 @@ describe('PhotosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotosComponent ]
+      declarations: [ PhotosComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

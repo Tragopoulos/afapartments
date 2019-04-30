@@ -12,6 +12,7 @@
     "polyfills.ts"
   ],
   "include": [
+    "../node_modules/ng-mdb-pro/index.ts",
     "**/*.spec.ts",
     "**/*.d.ts"
   ]

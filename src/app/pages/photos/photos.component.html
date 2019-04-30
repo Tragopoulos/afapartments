@@ -25,52 +25,42 @@
 <div class="row mx-3">
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_1.jpg" alt="Main B1" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_1.jpg" alt="Main B1" data-toggle="content" data-target="#content"></a>
   </div>
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_2.jpg" alt="Bedroom B4" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_2.jpg" alt="Bedroom B4" data-toggle="content" data-target="#content"></a>
   </div>
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_3.jpeg" alt="Bedroom B1" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_3.jpeg" alt="Bedroom B1" data-toggle="content" data-target="#content"></a>
   </div>
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_4.jpeg" alt="Bedroom B1" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_4.jpeg" alt="Bedroom B1" data-toggle="content" data-target="#content"></a>
   </div>
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_5.jpeg" alt="Kitchen B1" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_5.jpeg" alt="Kitchen B1" data-toggle="content" data-target="#content"></a>
   </div>
 
   <div class="col-lg-4 col-sm-6 mb-3">
-    <a><img (click)="modal1.show()" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_6.jpeg" alt="Main A2" data-toggle="modal" data-target="#modal1"></a>
+    <a><img (click)="openDarkModal(content)" class="img-fluid z-depth-4 relative waves-light" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/photo_6.jpeg" alt="Main A2" data-toggle="content" data-target="#content"></a>
   </div>
 
 </div>
 <!-- Grid row -->
 
-<!-- Modal 1 -->
-<div mdbModal #modal1="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <!--Content-->
-    <div class="modal-content">
-      <!--Body-->
-      <div class="modal-body mb-0 p-0">
-        <div class="embed-responsive embed-responsive-16by9">
-          <img (click)="modal1.hide()" class="embed-responsive-item" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/external.png" alt="Bedroom B1" allowfullscreen>
-        </div>
-      </div>
-      <!--Footer-->
-      <div class="modal-footer justify-content-center flex-column flex-md-row list-inline">
-        <ul class="list-inline flex-center text-align-center text-decoration-none">
-          <li><a style="color: white;" href="https://www.facebook.com/sharer/sharer.php?u=https://sindos-diamerismata-garsonieres.weebly.com" target="_blank"><button mdbBtn type="button" size="sm" class="waves-light" color="indigo" mdbWavesEffect><i class="fab fa-facebook-f"></i></button></a></li>
-          <li><a style="color: white;" href="https://twitter.com/intent/tweet?text=Βρήκα αυτό το καταπληκτικό διαμέρισμα στη Σίνδο&amp;url=https://sindos-diamerismata-garsonieres.weebly.com" target="_blank"><button mdbBtn type="button" size="sm" class="waves-light" color="cyan" mdbWavesEffect><i class="fab fa-twitter"></i></button></a></li>
-          <li><a style="color: white;" href="mailto:#?subject=Διαμέρισμα στη Σίνδο&body=Βρήκα αυτό το καταπληκτικό διαμέρισμα στη Σίνδο https://sindos-diamerismata-garsonieres.weebly.com" target="_blank"><button mdbBtn type="button" size="sm" class="waves-light btn btn-blue-grey" mdbWavesEffect><i class="fas fa-envelope"></i></button></a></li>
-        </ul>
-      </div>
-    </div>
-    <!--/.Content-->
+<!-- Dark Modal -->
+<ng-template #content let-modal>
+  <div class="modal-header dark-modal">
+    <img (click)="modal.dismiss('Cross click')" class="embed-responsive-item img-fluid" src="https://raw.githubusercontent.com/Tragopoulos/Afapartments/master/src/assets/external.png" alt="Bedroom B1" allowfullscreen>
   </div>
-</div>
+    <div class="justify-content-center flex-column flex-md-row list-inline">
+      <ul class="list-inline flex-center text-align-center text-decoration-none">
+        <li><a style="color: white;" href="https://www.facebook.com/sharer/sharer.php?u=https://sindos-diamerismata-garsonieres.weebly.com" target="_blank"><button mdbBtn type="button" size="sm" class="waves-light" color="indigo" mdbWavesEffect><i class="fab fa-facebook-f"></i></button></a></li>
+        <li><a style="color: white;" href="https://twitter.com/intent/tweet?text=Βρήκα αυτό το καταπληκτικό διαμέρισμα στη Σίνδο&amp;url=https://sindos-diamerismata-garsonieres.weebly.com" target="_blank"><button mdbBtn type="button" size="sm" class="waves-light" color="cyan" mdbWavesEffect><i class="fab fa-twitter"></i></button></a></li>
+        <li><a style="color: white;" href="mailto:#?subject=Διαμέρισμα στη Σίνδο&body=Βρήκα αυτό το καταπληκτικό διαμέρισμα στη Σίνδο https://sindos-diamerismata-garsonieres.weebly.com"><button mdbBtn type="button" size="sm" class="waves-light btn btn-blue-grey" mdbWavesEffect><i class="fas fa-envelope"></i></button></a></li>
+      </ul>
+    </div>
+</ng-template>

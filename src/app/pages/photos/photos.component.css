@@ -23,6 +23,15 @@
   background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
 }
 
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+
+.dark-modal .close {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
     background: #7d8488 !important;
