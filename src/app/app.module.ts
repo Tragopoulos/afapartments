@@ -24,8 +24,8 @@ import { ContactComponent } from './pages/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

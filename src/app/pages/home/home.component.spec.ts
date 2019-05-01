@@ -18,7 +18,7 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the Home page', () => {
     expect(component).toBeTruthy();
   });
 

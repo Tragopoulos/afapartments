@@ -1,17 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { PhotosComponent } from './photos.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { By } from '@angular/platform-browser';
 
 describe('PhotosComponent', () => {
   let component: PhotosComponent;
   let fixture: ComponentFixture<PhotosComponent>;
+  let el: HTMLElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotosComponent ],
+      declarations: [PhotosComponent],
       schemas: [NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('PhotosComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('should create', () => {
+  it('should create the Photos page', () => {
     expect(component).toBeTruthy();
   });
 
@@ -38,30 +40,71 @@ describe('PhotosComponent', () => {
     expect(compiled.querySelector('#photo-one')).toBeTruthy();
   });
 
+  it('should call the openDarkModal method when click on the first photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-one')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
+
   it('should render the second photo', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#photo-two')).toBeTruthy();
   });
+
+  it('should call the openDarkModal method when click on the second photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-two')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
 
   it('should render the third photo', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#photo-three')).toBeTruthy();
   });
 
+  it('should call the openDarkModal method when click on the third photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-three')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
+
   it('should render the fourth photo', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#photo-four')).toBeTruthy();
   });
+
+  it('should call the openDarkModal method when click on the fourth photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-four')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
 
   it('should render the fifth photo', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#photo-five')).toBeTruthy();
   });
 
+  it('should call the openDarkModal method when click on the fifth photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-five')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
+
   it('should render the sixth photo', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#photo-six')).toBeTruthy();
   });
 
+  it('should call the openDarkModal method when click on the sixth photo', async(() => {
+    spyOn(component, 'openDarkModal');
+    el = fixture.debugElement.query(By.css('#photo-six')).nativeElement;
+    el.click();
+    expect(component.openDarkModal).toHaveBeenCalled();
+  }));
 
 });

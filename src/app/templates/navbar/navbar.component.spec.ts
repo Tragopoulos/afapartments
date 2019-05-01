@@ -20,7 +20,34 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the navigation bar', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the title', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('mdb-navbar-brand')).toBeTruthy();
+  });
+
+  it('should render the Home button', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#button-one')).toBeTruthy();
+  });
+
+  it('should render the Gallery button', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#button-two')).toBeTruthy();
+  });
+
+  it('should render the Contact button', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#button-three')).toBeTruthy();
+  });
+
+  it('should render the dropdown', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.dropdown')).toBeTruthy();
+  });
+
+
 });
