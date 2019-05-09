@@ -12,7 +12,7 @@ export class PhotosComponent implements OnInit {
   modalService: NgbModal;
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(PLATFORM_ID) private platformId: object,
     private injector: Injector
   ) {
     if (isPlatformBrowser(this.platformId)) {
