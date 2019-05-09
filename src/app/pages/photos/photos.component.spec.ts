@@ -1,8 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { PhotosComponent } from './photos.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import {AfterContentInit, Component, NO_ERRORS_SCHEMA, TemplateRef, ViewChild} from '@angular/core';
 import { By } from '@angular/platform-browser';
 
+// @Component({
+//   template: `<ng-container *ngTemplateOutlet="content"></ng-container>
+//     <app-navbar></app-navbar>`,
+// })
+// class WrapperComponent implements AfterContentInit {
+//   @ViewChild(PhotosComponent) appComponentRef: PhotosComponent;
+//   content: any;
+//   ngAfterContentInit() {
+//     this.content = this.appComponentRef.modalRef;
+//   }
+// }
 describe('PhotosComponent', () => {
   let component: PhotosComponent;
   let fixture: ComponentFixture<PhotosComponent>;
@@ -10,8 +21,8 @@ describe('PhotosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [PhotosComponent],
-      schemas: [NO_ERRORS_SCHEMA]
+      declarations: [PhotosComponent, /*WrapperComponent*/],
+      schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents();
   }));
@@ -107,4 +118,16 @@ describe('PhotosComponent', () => {
     expect(component.openDarkModal).toHaveBeenCalled();
   }));
 
+  // it('should call modal Service open function when clicked ', async(() => {
+  //   spyOn(component.modalService, 'open').and.callThrough();
+  //   el = fixture.debugElement.nativeElement.querySelector('#photo-one');
+  //   el.click();
+  //   expect(component.modalService.open).toHaveBeenCalled();
+  // }));
+
+  // it('should have', async(() => {
+  //   const compiled = fixture.debugElement.nativeElement;
+  //   const headerText = (compiled.debugElement.queryAll(By.css('#ng-modal'))[0].nativeElement.innerText);
+  //   expect(headerText).toBeTruthy();
+  // }));
 });

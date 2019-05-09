@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +9,7 @@ import { FooterComponent } from './templates/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PhotosComponent } from './pages/photos/photos.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,14 +18,14 @@ import { ContactComponent } from './pages/contact/contact.component';
     FooterComponent,
     HomeComponent,
     PhotosComponent,
-    ContactComponent
+    ContactComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
