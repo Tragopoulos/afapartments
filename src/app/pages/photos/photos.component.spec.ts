@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { PhotosComponent } from './photos.component';
-import {AfterContentInit, Component, NO_ERRORS_SCHEMA, TemplateRef, ViewChild} from '@angular/core';
+import { AfterContentInit, Component, NO_ERRORS_SCHEMA, TemplateRef, ViewChild } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -25,8 +25,7 @@ describe('PhotosComponent', () => {
       imports: [NgbModalModule],
       declarations: [PhotosComponent, WrapperComponent],
       schemas: [NO_ERRORS_SCHEMA],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
