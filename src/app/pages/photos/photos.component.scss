@@ -1,19 +1,12 @@
-$background_color_1: #7d8488;
+//$background_color_1: #7d8488;
 
 .intro-header {
   height: unset !important;
 }
-.top-nav-collapse {
-  background-color: $background_color_1 !important;
-}
 .view {
   height: 70vh !important;
 }
-.navbar {
-  &:not(.top-nav-collapse) {
-    background: transparent !important;
-  }
-}
+
 .blury {
   -webkit-filter: blur(20px);
   filter: blur(20px);
@@ -33,13 +26,6 @@ $background_color_1: #7d8488;
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    &:not(.top-nav-collapse) {
-      background: #7d8488 !important;
-    }
-  }
-}
 @media (max-width: 740px) {
   .full-height {
     height: 700px;

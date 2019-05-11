@@ -16,7 +16,6 @@ class WrapperComponent implements AfterContentInit {
     this.content = this.appComponentRef.modalRef;
   }
 }
-
 describe('PhotosComponent', () => {
   let component: PhotosComponent;
   let fixture: ComponentFixture<WrapperComponent>;

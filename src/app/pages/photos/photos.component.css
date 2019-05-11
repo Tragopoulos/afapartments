@@ -2,16 +2,8 @@
   height: unset !important;
 }
 
-.top-nav-collapse {
-  background-color: #7d8488 !important;
-}
-
 .view {
   height: 70vh !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
 }
 
 .blury {
@@ -32,11 +24,6 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #7d8488 !important;
-  }
-}
 @media (max-width: 740px) {
   .full-height {
     height: 700px;
