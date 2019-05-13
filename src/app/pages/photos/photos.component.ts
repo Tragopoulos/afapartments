@@ -23,7 +23,6 @@ export class PhotosComponent implements OnInit {
   openDarkModal(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
-  ngOnInit() {
+  ngOnInit(): void {
   }
-
 }
